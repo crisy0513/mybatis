@@ -71,7 +71,7 @@ public interface StudentMapper {
     Student findById(Integer sno);
 
     /**
-     * 根据姓名查
+     * 根据姓名模糊查询
      */
     Student findByName(String name);
 

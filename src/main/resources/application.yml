@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.crisy.mybatis.pojo
+
+
+
+#MyBatis日志打印
+logging:
+  level:
+      com.crisy.mybatis.dao: debug
+
